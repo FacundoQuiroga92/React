@@ -1,12 +1,13 @@
 import React from 'react'
+import classes from './ItemDetail.module.css'
 
 const ItemDetail = ({name, price, img, description}) => {
   return (
-    <div>
-        <h2>{name}</h2>
-        <img src={img} style={{width: 300}} />
-        <h3>${price}</h3>
-        <h3>{description}</h3>
+    <div className={classes.centrado}>
+        <h2 className={classes.title}>{name}</h2>
+        <img className={classes.img} src={img}  />
+        <h3 className={classes.description}>${price}</h3>
+        <h3 className={classes.description}>{description}</h3>
     </div>
   )
 }

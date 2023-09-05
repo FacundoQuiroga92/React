@@ -1,0 +1,21 @@
+.description{
+    color: #ecf39e;
+   
+}
+.img{
+    border-radius: 5px;
+    background-color: #ecf39e;
+    width: 200px;
+    
+    
+}
+.title{
+    color:#ecf39e;
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
