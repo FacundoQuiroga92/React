@@ -4,7 +4,7 @@ import classes from './CartWidget.module.css'
 
 const CartWidget = () => {
   return (
-    <button>
+    <button className={classes.borderBotton}>
         <img className={classes.Carrito} src={Carrito} />
         0
     </button>

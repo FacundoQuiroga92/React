@@ -1,0 +1,18 @@
+.title{
+    color:#ecf39e;
+}
+.bottonCatalogo{
+    background-color: #ecf39e;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+.description{
+    color: #ecf39e;
+    text-align: center;
+}
+.img{
+    border-radius: 5px;
+    background-color: #ecf39e;
+    width: 200px;
+    
+}

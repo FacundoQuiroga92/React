@@ -1,9 +1,10 @@
 import React from 'react'
 import Item from '../Item/Item'
+import classes from './ItemList.module.css'
 
 const ItemList = ({ products }) => {
   return (
-    <div style={{display: 'flex'}}>
+    <div className={classes.centrado}>
         {products.map(product => {
         return (
             <Item key={product.id} {...product} />   
