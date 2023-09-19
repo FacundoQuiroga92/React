@@ -1,18 +1,42 @@
 .title{
-    color:#ecf39e;
+    color: black;
+    background-color: #ecf39e;
+    border-radius: 10px;
+    text-align: center;
+    padding: 7px;
+}
+.title:hover{
+    background-color: #DCFA6F; /* Cambia el color de fondo al pasar el mouse (ajusta según tu diseño) */
+    color: #000000; /* Cambia el color del texto al pasar el mouse (ajusta según tu diseño) */
+    
+    transition: background-color 0.5s, 
 }
 .bottonCatalogo{
     background-color: #ecf39e;
     border-radius: 10px;
-    margin-left: 50px;
+    
 }
 .description{
-    color: #ecf39e;
+    color: black;
+    background-color: #ecf39e;
     text-align: center;
+    border-radius: 5px;
+    padding: 5px;
 }
 .img{
     border-radius: 5px;
     background-color: #ecf39e;
-    width: 200px;
+    width: 150px;
     
+}
+.itemContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #5E8C61;
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin:1px 5px 
 }

@@ -5,7 +5,11 @@
   text-align: center;
    
 } */
+*{
+  font-family: 'Assistant', sans-serif;
+
+}
 body{
-  background-color: #31572c;
+  background-color: #FAFAFA;
 }
 

@@ -1,3 +1,42 @@
 .nav{
     background-color: #ecf39e;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+ .container{
+    text-decoration: none; 
+    color: black; 
+    margin-right: 20px;
+    font-size: 1rem;
+} 
+
+.navLink {
+    text-decoration: none; /* Elimina la decoración del enlace */
+    color: black; /* Color del texto de los botones (ajusta según tu diseño) */
+    margin-right: 20px; /* Espaciado entre los botones (ajusta según tu diseño) */
+    font-size: 1rem; /* Tamaño del texto de los botones (ajusta según tu diseño) */
+    padding: 10px 20px; /* Espaciado interno de los botones (ajusta según tu diseño) */
+    border: 1px solid #5E8C61; /* Borde de 1 píxel con color (ajusta según tu diseño) */
+    border-radius: 20px; /* Bordes redondos */
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2); /* Sombra con valores de desplazamiento y color (ajusta según tu diseño) */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave de color y fondo */
+  }
+  
+  /* Cambio de estilo al pasar el mouse por encima de los botones */
+  .navLink:hover {
+    background-color: #5E8C61; /* Cambia el color de fondo al pasar el mouse (ajusta según tu diseño) */
+    color: #FFFFFF; /* Cambia el color del texto al pasar el mouse (ajusta según tu diseño) */
+    font-size: 1.1rem;
+    transition: background-color 0.5s, font-size 0.5s;
+  }
+
+
+.branding{
+    padding: 15px;
+}
+.brand{
+    width: 150px;
+    height: auto;
 }

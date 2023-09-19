@@ -6,7 +6,7 @@ const Item = ( {id, name, img, price}) => {
   const navigate = useNavigate()
   
   return (
-    <div >
+    <div className={classes.itemContainer}>
         <h3 className={classes.title}>{name}</h3>
         <img className={classes.img} src={img} />
         <p className={classes.description}>Precio: USD {price}</p>
