@@ -20,21 +20,17 @@ const Navbar = () => {
       <div >
         
         <div className={classes.container}>
-          <a onClick={() => navigate('/')} className={classes.navLink} href="#">
+          <a onClick={() => navigate('/')} className={classes.navLink}>
             Inicio
           </a>
           <a
             onClick={() => navigate('/category/termos')}
-            className={classes.navLink}
-            href="#"
-          >
+            className={classes.navLink}>
             Termos
           </a>
           <a
             onClick={() => navigate('/category/vasos')}
-            className={classes.navLink}
-            href="#"
-          >
+            className={classes.navLink}>
             Vasos Termicos
           </a>
         </div>

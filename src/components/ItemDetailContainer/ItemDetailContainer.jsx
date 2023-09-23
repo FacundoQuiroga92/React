@@ -20,7 +20,7 @@ const ItemDetailContainer = () => {
 
   return (
     <div className={classes.centrado}>
-        <h1>Detalle De Producto</h1>
+        <h1 className={classes.title} >Detalle De Producto</h1>
         <ItemDetail {...product}/>
     </div>
   )

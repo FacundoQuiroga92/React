@@ -1,37 +1,23 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React from 'react'
+import { useState } from 'react'
+import classes from './ItemCount.module.css'
 
-const ItemCount = () => {
-    const [count, setCount] = useState(0)
-    const [title, setTitle] = useState('Este es un titulo')
-    const h2Ref = useRef()
+const ItemCount = ({ stock, initial, onAdd}) => {
+    const [count, setCount] = useState(1)
 
-    const changeText = () => {
-      console.log(h2Ref)
-      h2Ref.current.innerHTML = 'Nuevo texto'
+    const decrement = () => {
+      if (count > 1) setCount(prev => prev - 1)
     }
-
-    const recuperarTexto = () => {
-      h2Ref.current.innerHTML = 'Primer texto'
+    const increment = () => {
+      if(count < stock) setCount(prev => prev + 1)
     }
-
-    useEffect(() => {
-      document.title = 'Count:'+ count
-    },[count])
-
+ 
   return (
     <div>
-        <p>Aca utilizare ref</p>
-        <h2 ref={h2Ref}>Primer texto</h2>
-        <button onClick={changeText}>Cambiar texto</button>
-        <button onClick={recuperarTexto}>Recuperar primer texto</button>
-
-        <h1>{title}</h1>
-        <button onClick={() => setTitle('Tu titulo ha cambiado para siempre')}>Cambiar titulo</button>
-        <button onClick={() => setTitle('Este es un titulo')}>Volver al primer titulo</button>
-        <p>`carrito: ${count}` </p>
-        <h1>{count} </h1>
-        <button onClick={() => setCount(count + 1)} >Incrementar</button>
-        <button onClick={()=> setCount(count -1)} >Decrementar</button>
+        <h4 className={classes.title}>{count}</h4>
+        <button onClick={decrement}> - </button>
+        <button onClick={() => onAdd(count) }>Agregar al carrito</button>
+        <button onClick={increment}> + </button>
     </div>
   )
 }

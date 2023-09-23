@@ -1,5 +1,6 @@
 .description{
-    color: #ecf39e;
+    background-color: #ecf39e;
+    color: black;
    
 }
 .img{
@@ -10,7 +11,8 @@
     
 }
 .title{
-    color:#ecf39e;
+    color: black;
+    background-color:#ecf39e;
 }
 
 .centrado{
