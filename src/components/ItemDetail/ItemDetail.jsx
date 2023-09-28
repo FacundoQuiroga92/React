@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import classes from './ItemDetail.module.css'
 import ItemCount from '../ItemCount/ItemCount'
 import { useCart } from '../context/CartContext'
-
+import { Link } from 'react-router-dom'
 import { useNotification } from '../../Notification/NotificationService'
 
 const ItemDetail = ({id, name, price, img, description, stock}) => {
@@ -14,8 +14,11 @@ const ItemDetail = ({id, name, price, img, description, stock}) => {
     const objProductToAdd = {
       id, name, price, quantity
     }
+    
     addItem(objProductToAdd)
-     setNotification('SE AGREGO AL CARRITO') 
+
+    setNotification('se agrego algo al carrito')
+
     console.log('se agrega al carrito; ', quantity )
      
     setQuantity(quantity)
@@ -32,7 +35,7 @@ const ItemDetail = ({id, name, price, img, description, stock}) => {
           quantity === 0? (
             <ItemCount stock={stock} onAdd={handleOnAdd}/>
           ): (
-            <button >Finalizar compra</button>
+            <Link to='/cart' >Finalizar compra</Link>
           )
         }
     </div>

@@ -55,6 +55,7 @@ const Notification = ({ msg }) => {
     fontSize: 20,
     borderRadius: 10,
   };
+  if (!msg) return null
 
   return <div style={notiStyle}>{msg}</div>;
 };
