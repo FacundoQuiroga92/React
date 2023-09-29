@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
 import classes from './ItemDetail.module.css'
 import ItemCount from '../ItemCount/ItemCount'
+import React, { useState } from 'react'
 import { useCart } from '../context/CartContext'
 import { Link } from 'react-router-dom'
 import { useNotification } from '../../Notification/NotificationService'
@@ -27,15 +27,17 @@ const ItemDetail = ({id, name, price, img, description, stock}) => {
   
   return (
     <div className={classes.centrado}>
+      <div className={classes.card}>
         <h2 className={classes.title}>{name}</h2>
         <img className={classes.img} src={img}  />
-        <h3 className={classes.description}>${price}</h3>
         <h3 className={classes.description}>{description}</h3>
+        <h3 className={classes.description}>${price}</h3>
+      </div>
         {
           quantity === 0? (
             <ItemCount stock={stock} onAdd={handleOnAdd}/>
           ): (
-            <Link to='/cart' >Finalizar compra</Link>
+            <Link className={classes.finish} to='/cart' >Finalizar compra</Link>
           )
         }
     </div>

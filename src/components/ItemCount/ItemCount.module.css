@@ -1,4 +1,44 @@
 .title{
-    background-color: antiquewhite;
+    /* display: inline-block; */
+    font-size: 20px;
     color: black;
+    background-color: aliceblue;
+    border-radius: 40px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 80px;
 }
+
+
+.increment, .decrement{
+    background-color: #90a955;
+    color: white; 
+    margin-bottom: 15px;
+    font-size: 1rem; 
+    padding: 5px 15px;
+    border: 1px solid #5E8C61; 
+    border-radius: 10px; 
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+}
+.agregar{
+    background-color: white;
+    color: black; 
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1rem; 
+    padding: 10px 15px;
+    border: 1px solid white; 
+    border-radius: 20px; 
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+}
+.agregar:hover{
+    background-color: #5E8C61;
+    color: white;
+    border: 1px solid rgb(18, 184, 18);
+    transition: background-color 0.5s, border 0.5s;
+}
+

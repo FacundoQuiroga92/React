@@ -1,8 +1,8 @@
 import React from 'react'
 import CartWidget from '../CartWidget/CartWidget'
 import classes from './Navbar.module.css'
-import { useNavigate } from 'react-router-dom'
 import logo from './assets/logoNavbar.png'
+import { useNavigate } from 'react-router-dom'
 
 
 const Navbar = () => {

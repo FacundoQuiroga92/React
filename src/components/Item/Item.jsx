@@ -1,6 +1,6 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 import classes from './Item.module.css'
+import { useNavigate } from 'react-router-dom'
 
 const Item = ( {id, name, img, price}) => {
   const navigate = useNavigate()

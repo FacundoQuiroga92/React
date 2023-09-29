@@ -1,20 +1,12 @@
 import React, { useState } from "react";
-import CheckoutForm from "../CheckoutForm/CheckoutForm";
 import { db } from '../../services/firebase/firebaseConfig'
 import { useCart } from "../context/CartContext";
 import { addDoc, collection, documentId, getDocs, query, where, writeBatch } from "firebase/firestore";
+import CheckoutForm from "../CheckoutForm/CheckoutForm";
 import Swal from 'sweetalert2'
+import classes from './Checkout.module.css'
 
 const Checkout = () => {
-    /* const objOrder =  {
-        buyer:{
-            name: 'facundo',
-            phone:'154964540',
-            email: 'contacto@gmail.com'
-        },
-        items : [],
-        total : 123
-    } */
 
     const [orderId, setOrderId] = useState('')
 
@@ -99,7 +91,7 @@ const Checkout = () => {
 
     return (
         <>
-            <h1>Checkout - Complete con sus datos </h1>
+            <h1 className={classes.titleCheckout}>Complete con sus datos para continuar</h1>
             <CheckoutForm onConfirm={createOrder} />
         </>
     )

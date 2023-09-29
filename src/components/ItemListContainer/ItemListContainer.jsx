@@ -1,8 +1,7 @@
 import React from 'react'
 import classes from './ItemListContainer.module.css'
-/* import { getProducts, getProductsByCategory } from '../../asyncMock' */
-import { useEffect, useState } from 'react'
 import ItemList from '../ItemList/ItemList'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { db } from "../../services/firebase/firebaseConfig"
 
@@ -31,16 +30,6 @@ const ItemListContainer = ({greeting}) => {
         console.error(error)
       })
       
-
-    /* const asyncFunction = categoryId ? getProductsByCategory : getProducts
-
-    asyncFunction(categoryId)
-      .then(result => {
-        setProducts(result)
-    })
-      .catch(error =>{
-        console.error(error)
-      }) */
   },[categoryId]) 
 
   return (

@@ -69,7 +69,7 @@ const products = [
         category:'vasos',
         img:'https://i.pinimg.com/564x/2d/f0/76/2df07615790a9459c4e2d97bbd81ea3f.jpg',
         stock:22,
-        description:'Descripcion del vaso'
+        description:'descripcion del vaso '
     },
 ]
 

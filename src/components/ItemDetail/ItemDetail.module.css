@@ -1,18 +1,22 @@
 .description{
-    background-color: #ecf39e;
+    text-align: center;
+    font-size: 18px;
+    
     color: black;
    
 }
 .img{
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #ecf39e;
-    width: 200px;
-    
-    
+    width:300px;
+}
+.card{
+    margin-bottom: 30px;
 }
 .title{
     color: black;
-    background-color:#ecf39e;
+    font-size: 25px;
+    text-align: center;
 }
 
 .centrado{
@@ -20,4 +24,24 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+   
+}
+.finish{
+    text-decoration: none;
+    background-color: white;
+    color: black; 
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1rem; 
+    padding: 10px 15px;
+    border: 1px solid white; 
+    border-radius: 20px; 
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+}
+.finish:hover{
+    background-color: #5E8C61;
+    color: white;
+    border: 1px solid rgb(18, 184, 18);
+    transition: background-color 0.5s, border 0.5s;
 }

@@ -1,0 +1,53 @@
+ .container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: aliceblue;
+    
+} 
+.containerBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+}
+.btnCart{
+    text-decoration: none;
+    color: black; 
+    margin-right: 20px; 
+    font-size: 1rem;
+    padding: 10px 20px; 
+    border: 1px solid #ecf39e;
+    border-radius: 20px;
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+}
+.btnCart:hover{
+    background-color: #84cc88; 
+    color: #FFFFFF; 
+    border: 1px solid #00911f;
+    transition: background-color 0.5s, border 0.5s;
+}
+.remove{
+    text-decoration: none; /* Elimina la decoración del enlace */
+    color: black; /* Color del texto de los botones (ajusta según tu diseño) */
+    margin-right: 20px; /* Espaciado entre los botones (ajusta según tu diseño) */
+    font-size: 1rem; /* Tamaño del texto de los botones (ajusta según tu diseño) */
+    padding: 7px 10px; /* Espaciado interno de los botones (ajusta según tu diseño) */
+    border: 1px solid #ff4e07; /* Borde de 1 píxel con color (ajusta según tu diseño) */
+    border-radius: 10px; /* Bordes redondos */
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2); /* Sombra con valores de desplazamiento y color (ajusta según tu diseño) */
+     
+}
+.remove:hover{
+    background-color: rgb(182, 25, 25);
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}

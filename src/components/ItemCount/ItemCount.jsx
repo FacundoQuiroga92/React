@@ -1,6 +1,7 @@
 import React from 'react'
-import { useState } from 'react'
 import classes from './ItemCount.module.css'
+import { useState } from 'react'
+
 
 const ItemCount = ({ stock, initial, onAdd}) => {
     const [count, setCount] = useState(1)
@@ -11,13 +12,13 @@ const ItemCount = ({ stock, initial, onAdd}) => {
     const increment = () => {
       if(count < stock) setCount(prev => prev + 1)
     }
- 
+    
   return (
-    <div>
+    <div className={classes.count}>
         <h4 className={classes.title}>{count}</h4>
-        <button onClick={decrement}> - </button>
-        <button onClick={() => onAdd(count) }>Agregar al carrito</button>
-        <button onClick={increment}> + </button>
+        <button className={classes.decrement} onClick={decrement}> - </button>
+        <button className={classes.agregar} onClick={() => onAdd(count) }>Agregar al carrito</button>
+        <button className={classes.increment} onClick={increment}> + </button>
     </div>
   )
 }
